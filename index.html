@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Signstimator — Professional Sign Estimating App</title>
-  <meta name="description" content="Signstimator is a professional sign industry calculator for channel letters, vinyl graphics, vehicle wraps, banners, and dimensional signs. Coming soon to iOS and Android." />
+  <title>Signstimator — Coming Soon</title>
+  <meta name="description" content="Signstimator is a professional sign estimating app for channel letters, vinyl, vehicle wraps, and more. Coming soon to iOS and Android." />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -30,159 +30,69 @@
     body { font-family: 'Inter', system-ui, sans-serif; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased">
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col">
+
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+  <nav class="w-full border-b border-slate-800">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-5 flex items-center justify-between">
       <a href="index.html" class="text-xl font-bold tracking-tight text-white">
         SIGN<span class="text-brand-500">STIMATOR</span>
       </a>
-      <div class="flex items-center gap-6 text-sm font-medium">
-        <a href="#features" class="text-slate-300 hover:text-white transition">Features</a>
-        <a href="#about" class="text-slate-300 hover:text-white transition">About</a>
-        <a href="privacy.html" class="text-slate-300 hover:text-white transition">Privacy</a>
-        <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white px-4 py-2 rounded-lg transition">Contact</a>
-      </div>
+      <a href="privacy.html" class="text-sm text-slate-400 hover:text-white transition">
+        Privacy Policy
+      </a>
     </div>
   </nav>
 
-  <!-- Hero -->
-  <section class="pt-32 pb-20 px-4 sm:px-6">
-    <div class="max-w-4xl mx-auto text-center">
+  <!-- Main Content -->
+  <main class="flex-1 flex items-center justify-center px-4 sm:px-6 py-16">
+    <div class="max-w-2xl w-full text-center">
+      
+      <!-- Badge -->
       <div class="inline-flex items-center gap-2 bg-slate-800/60 border border-slate-700 text-brand-400 text-sm font-medium px-4 py-1.5 rounded-full mb-8">
         <span class="w-2 h-2 bg-brand-500 rounded-full animate-pulse"></span>
-        Coming soon to iOS &amp; Android
+        Coming Soon
       </div>
+
+      <!-- Heading -->
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
-        Fast. Accurate.<br />
-        <span class="text-brand-500">Sign Estimates</span>
+        Signstimator
       </h1>
-      <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
-        Professional-grade estimating tools for channel letters, vinyl graphics, vehicle wraps, banners, and dimensional signs — built for sign shop owners, fabricators, and estimators.
+
+      <p class="text-lg sm:text-xl text-slate-400 max-w-xl mx-auto mb-10 leading-relaxed">
+        Professional estimating tools for channel letters, vinyl graphics, vehicle wraps, banners, and dimensional signs.
+        <br class="hidden sm:block" />
+        Built for sign shops and fabricators.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#contact" class="w-full sm:w-auto bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-lg shadow-brand-900/30">
+
+      <!-- Status -->
+      <div class="inline-flex items-center gap-3 bg-slate-900 border border-slate-800 rounded-2xl px-6 py-4 mb-12">
+        <div class="w-3 h-3 bg-amber-400 rounded-full animate-pulse"></div>
+        <span class="text-slate-300 text-sm sm:text-base">Currently in development for iOS &amp; Android</span>
+      </div>
+
+      <!-- Contact / Notify -->
+      <div class="space-y-4">
+        <p class="text-slate-500 text-sm">Want to be notified when we launch?</p>
+        <a href="mailto:hello@signstimator.com" 
+           class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-500 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-lg shadow-brand-900/30">
           Get Notified
         </a>
-        <a href="#features" class="w-full sm:w-auto border border-slate-700 hover:border-slate-500 text-slate-200 font-medium px-8 py-3.5 rounded-xl transition">
-          See Features
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section id="features" class="py-20 px-4 sm:px-6 bg-slate-900/50">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Built for Sign Professionals</h2>
-        <p class="text-slate-400 max-w-2xl mx-auto">Everything you need to generate accurate, profitable estimates — whether you’re in the shop or on the job site.</p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Feature cards -->
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-700/50 transition">
-          <div class="w-12 h-12 bg-brand-600/20 text-brand-400 rounded-xl flex items-center justify-center mb-4 text-2xl">🔤</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Channel Letters</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Calculate material and labor costs for aluminum, stainless, acrylic, and brass channel letters across multiple lighting styles.</p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-700/50 transition">
-          <div class="w-12 h-12 bg-brand-600/20 text-brand-400 rounded-xl flex items-center justify-center mb-4 text-2xl">🚗</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Vehicle Wraps</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Estimate coverage and pricing for sedans, vans, trucks, and trailers with adjustable coverage levels and labor rates.</p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-700/50 transition">
-          <div class="w-12 h-12 bg-brand-600/20 text-brand-400 rounded-xl flex items-center justify-center mb-4 text-2xl">📐</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Vinyl Graphics</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Quick area calculations with waste factors, material types, and markup so you never underprice a decal job again.</p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-700/50 transition">
-          <div class="w-12 h-12 bg-brand-600/20 text-brand-400 rounded-xl flex items-center justify-center mb-4 text-2xl">🏳️</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Banners</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Price vinyl, mesh, fabric, and canvas banners with common finishing options like grommets, pole pockets, and hems.</p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-700/50 transition">
-          <div class="w-12 h-12 bg-brand-600/20 text-brand-400 rounded-xl flex items-center justify-center mb-4 text-2xl">🧱</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Dimensional Signs</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">Support for PVC foam, acrylic, aluminum composite, wood, and more with per-letter or per-sign pricing.</p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-brand-700/50 transition">
-          <div class="w-12 h-12 bg-brand-600/20 text-brand-400 rounded-xl flex items-center justify-center mb-4 text-2xl">📱</div>
-          <h3 class="text-lg font-semibold text-white mb-2">Works Offline</h3>
-          <p class="text-slate-400 text-sm leading-relaxed">All calculations run on-device. No internet required when you’re estimating on the job site or in the shop.</p>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <!-- About / CTA -->
-  <section id="about" class="py-20 px-4 sm:px-6">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Why Signstimator?</h2>
-      <p class="text-slate-400 text-lg leading-relaxed mb-8">
-        Sign shops lose money every day from slow or inconsistent estimating. Signstimator is being built to give fabricators and estimators a fast, reliable, mobile-first tool that produces consistent numbers — whether you’re quoting a single set of channel letters or a full fleet wrap.
-      </p>
-      <p class="text-slate-400 text-lg leading-relaxed">
-        Currently in development. Join the waitlist to be notified when the iOS and Android apps launch.
-      </p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 px-4 sm:px-6 bg-slate-900/50">
-    <div class="max-w-xl mx-auto">
-      <div class="text-center mb-10">
-        <h2 class="text-3xl font-bold text-white mb-3">Stay in the Loop</h2>
-        <p class="text-slate-400">Drop your email and we’ll let you know when Signstimator is available.</p>
-      </div>
-
-      <!-- Simple contact form (no backend — replace with Formspree / Netlify Forms later) -->
-      <form class="space-y-4" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <div>
-          <label for="name" class="block text-sm font-medium text-slate-300 mb-1.5">Name</label>
-          <input type="text" id="name" name="name" required
-                 class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
-                 placeholder="Your name" />
-        </div>
-        <div>
-          <label for="email" class="block text-sm font-medium text-slate-300 mb-1.5">Email</label>
-          <input type="email" id="email" name="email" required
-                 class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
-                 placeholder="you@company.com" />
-        </div>
-        <div>
-          <label for="message" class="block text-sm font-medium text-slate-300 mb-1.5">Message (optional)</label>
-          <textarea id="message" name="message" rows="3"
-                    class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition"
-                    placeholder="Tell us what features matter most to you..."></textarea>
-        </div>
-        <button type="submit"
-                class="w-full bg-brand-600 hover:bg-brand-500 text-white font-semibold py-3.5 rounded-xl transition shadow-lg shadow-brand-900/20">
-          Notify Me
-        </button>
-        <p class="text-xs text-slate-500 text-center">
-          By submitting you agree to our <a href="privacy.html" class="underline hover:text-slate-300">Privacy Policy</a>.
-        </p>
-      </form>
-    </div>
-  </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-800 py-10 px-4 sm:px-6">
-    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div class="text-slate-400 text-sm">
-        © 2025–2026 Signstimator. All rights reserved.
-      </div>
-      <div class="flex items-center gap-6 text-sm">
-        <a href="privacy.html" class="text-slate-400 hover:text-white transition">Privacy Policy</a>
-        <a href="mailto:hello@signstimator.com" class="text-slate-400 hover:text-white transition">Contact</a>
+  <footer class="border-t border-slate-800 py-8 px-4 sm:px-6">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <div>© 2025–2026 Signstimator. All rights reserved.</div>
+      <div class="flex items-center gap-6">
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="mailto:hello@signstimator.com" class="hover:text-white transition">Contact</a>
       </div>
     </div>
   </footer>
+
 </body>
 </html>
