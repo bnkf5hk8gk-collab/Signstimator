@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support — Signstimator</title>
+  <meta name="description" content="Support, FAQs, and feedback for Signstimator — the professional sign estimating app." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .logo-glow {
+      filter: drop-shadow(0 0 6px rgba(34, 211, 238, 0.4));
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="icon.png" alt="Signstimator" class="w-9 h-9 rounded-lg logo-glow" />
+        <span class="text-xl font-bold tracking-tight text-white">
+          SIGN<span class="text-brand-400">STIMATOR</span>
+        </span>
+      </a>
+      <div class="flex items-center gap-6 text-sm font-medium">
+        <a href="Support.html" class="text-white">Support</a>
+        <a href="privacy.html" class="text-slate-400 hover:text-white transition">Privacy</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-1 px-4 sm:px-6 py-16">
+    <div class="max-w-3xl mx-auto">
+
+      <h1 class="text-3xl sm:text-4xl font-bold text-white mb-3">Support</h1>
+      <p class="text-slate-400 mb-12 text-lg">
+        Common questions and how to get in touch. We’re still in development, so your feedback really helps shape the app.
+      </p>
+
+      <!-- FAQ Section -->
+      <section class="space-y-6 mb-16">
+        <h2 class="text-xl font-semibold text-white mb-6">Frequently Asked Questions</h2>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-medium text-white mb-2">When will Signstimator be available?</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            We’re currently building the iOS and Android versions. Join the notification list on the home page and we’ll email you as soon as the first public release is ready.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-medium text-white mb-2">What types of signs will the estimator cover?</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Channel letters, vinyl graphics, vehicle wraps, banners, dimensional letters, and more. The goal is a practical tool built specifically for sign shops and fabricators.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-medium text-white mb-2">Will it work offline?</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Yes — estimating calculations are designed to work on-device so you can price jobs even without a strong internet connection.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-medium text-white mb-2">Can I customize pricing and markup?</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Absolutely. You’ll be able to set your own material costs, labor rates, markups, and company branding (including logos) so the estimates match how your shop actually works.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6">
+          <h3 class="font-medium text-white mb-2">How can I request a feature or report a problem?</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Use the feedback form below (the same one that’s linked inside the app). We read every response.
+          </p>
+        </div>
+      </section>
+
+      <!-- Feedback Form Section -->
+      <section class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 sm:p-8">
+        <h2 class="text-xl font-semibold text-white mb-2">Send Feedback or Ask a Question</h2>
+        <p class="text-slate-400 text-sm mb-6">
+          This is the same form used inside the Signstimator app. Everything lands in the same place.
+        </p>
+
+        <!-- Embedded Google Form -->
+        <div class="w-full overflow-hidden rounded-xl border border-slate-700 bg-white">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdFB1LGdTTYkwJkx6457L7xm6RUHXx0BUweLzCU4SB6owOhcw/viewform?embedded=true"
+            width="100%" 
+            height="900" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            class="w-full"
+            title="Signstimator Feedback Form">
+            Loading…
+          </iframe>
+        </div>
+
+        <p class="text-slate-500 text-xs mt-5 text-center">
+          Having trouble with the form? 
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFB1LGdTTYkwJkx6457L7xm6RUHXx0BUweLzCU4SB6owOhcw/viewform" 
+             target="_blank" 
+             rel="noopener"
+             class="text-brand-400 hover:underline">
+            Open it in a new tab
+          </a>
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-8 px-4 sm:px-6 mt-auto">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+      <div>© 2025–2026 Signstimator. All rights reserved.</div>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-white transition">Home</a>
+        <a href="privacy.html" class="hover:text-white transition">Privacy Policy</a>
+        <a href="mailto:hello@signstimator.com" class="hover:text-white transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
